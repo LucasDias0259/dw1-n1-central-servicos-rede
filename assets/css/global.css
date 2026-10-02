@@ -1,0 +1,176 @@
+:root {
+  --azul: #173b82;
+  --azul-escuro: #112566;
+  --azul-claro: #4db6e8;
+  --fundo: #eef2f7;
+  --texto: #111827;
+  --texto-suave: #556070;
+  --borda: #b4c0cf;
+  --branco: #ffffff;
+  --raio: 0.75rem;
+  --darkgreen: #006400;
+  --green: #008000;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  font-size: 1rem;
+}
+
+.container {
+  width: 92%;
+  max-width: 75rem;
+  margin-inline: auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background: green;
+  color: var(--branco);
+  padding: 1.5rem 0;
+  border-radius: 0 0 var(--raio) var(--raio);
+}
+.cabecalho .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.cabecalho h1 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.cabecalho p {
+  color: #dbe7fb;
+}
+
+/* Menu */
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  background: var(--branco);
+  color: var(--azul);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+.menu a:hover,
+.menu a:focus-visible {
+  outline: 3px solid var(--azul-claro);
+}
+.menu a[aria-current="page"] {
+  background: var(--azul-claro);
+}
+
+/* Conteúdo */
+main {
+  padding: 2rem 0;
+}
+main h2 {
+  font-size: 1.5rem;
+}
+.rotulo-secao {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+/* Botões */
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--azul);
+  color: var(--branco);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.botao:hover,
+.botao:focus-visible {
+  background: var(--azul-escuro);
+  outline: 3px solid var(--azul-claro);
+}
+.botao-secundario {
+  background: #e1e7f0;
+  color: #3a475a;
+}
+.botao-secundario:hover,
+.botao-secundario:focus-visible {
+  background: #cdd6e3;
+  color: #3a475a;
+}
+
+/* Formulários (base) */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+.campo label,
+legend {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="date"],
+.campo input[type="time"],
+.campo input[type="search"],
+.campo input[type="datetime-local"],
+.campo input[type="file"],
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.4rem;
+  background: var(--branco);
+}
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 3px solid var(--azul-claro);
+  border-color: var(--azul);
+}
+.obrigatorio {
+  color: #b91c1c;
+}
+
+/* Rodapé */
+.rodape {
+  background: darkgreen;
+  color: var(--branco);
+  text-align: center;
+  padding: 1.25rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 48rem) {
+  .cabecalho .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+}

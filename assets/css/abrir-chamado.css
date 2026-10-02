@@ -1,0 +1,104 @@
+.titulo-pagina {
+  margin-bottom: 1.5rem;
+}
+.titulo-pagina h2 {
+  font-size: 2rem;
+}
+.titulo-pagina p {
+  color: var(--texto-suave);
+}
+
+.formulario {
+  background: #f8fafc;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.grupo {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+.grupo + .grupo {
+  border-top: 1px solid var(--borda);
+  padding-top: 1.5rem;
+}
+.grupo > legend {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+}
+.linha-campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.campo-largo {
+  flex: 2 1 24rem;
+}
+
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.4rem;
+  background: var(--branco);
+  min-width: 0;
+}
+.opcoes legend {
+  padding: 0 0.3rem;
+}
+.opcao {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.rodape-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.confirmacao {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--texto-suave);
+  flex: 1 1 18rem;
+}
+.confirmacao input {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.botoes {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 48rem) {
+  .linha-campos {
+    flex-direction: column;
+  }
+  .botoes {
+    width: 100%;
+    flex-direction: column;
+  }
+  .botoes .botao {
+    width: 100%;
+  }
+  .titulo-pagina h2 {
+    font-size: 1.6rem;
+  }
+}

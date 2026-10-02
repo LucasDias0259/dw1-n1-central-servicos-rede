@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abrir chamado | Central de Serviços de Rede</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/abrir-chamado.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <div>
+        <h1>Central de Chamados</h1>
+        <p>Registro e acompanhamento de solicitações técnicas</p>
+      </div>
+      <nav class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="chamados.html">Chamados</a></li>
+          <li><a href="abrir-chamado.html" aria-current="page">Abrir chamado</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="titulo-pagina">
+      <p class="rotulo-secao">Abertura de solicitação</p>
+      <h2>Abrir novo chamado</h2>
+      <p>Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</p>
+    </div>
+
+    <form class="formulario" action="#" method="post" enctype="multipart/form-data">
+      <fieldset class="grupo">
+        <legend>1. Dados do solicitante</legend>
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="nome">Nome completo <span class="obrigatorio">*</span></label>
+            <input type="text" id="nome" name="nome" required minlength="5" maxlength="100" autocomplete="name">
+          </div>
+          <div class="campo">
+            <label for="email">E-mail <span class="obrigatorio">*</span></label>
+            <input type="email" id="email" name="email" required maxlength="100" autocomplete="email">
+          </div>
+        </div>
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" maxlength="15" autocomplete="tel">
+          </div>
+          <div class="campo">
+            <label for="data-hora">Data e hora da ocorrência <span class="obrigatorio">*</span></label>
+            <input type="datetime-local" id="data-hora" name="data-hora" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <legend>2. Informações do chamado</legend>
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="categoria">Categoria <span class="obrigatorio">*</span></label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione</option>
+              <option value="rede">Rede</option>
+              <option value="seguranca">Segurança</option>
+              <option value="hardware">Hardware</option>
+              <option value="sistema">Sistema</option>
+            </select>
+          </div>
+          <fieldset class="opcoes campo">
+            <legend>Prioridade <span class="obrigatorio">*</span></legend>
+            <div class="opcao"><input type="radio" id="prioridade-baixa" name="prioridade" value="baixa" required><label for="prioridade-baixa">Baixa</label></div>
+            <div class="opcao"><input type="radio" id="prioridade-media" name="prioridade" value="media"><label for="prioridade-media">Média</label></div>
+            <div class="opcao"><input type="radio" id="prioridade-alta" name="prioridade" value="alta"><label for="prioridade-alta">Alta</label></div>
+          </fieldset>
+          <div class="campo">
+            <label for="anexo">Anexo</label>
+            <input type="file" id="anexo" name="anexo" accept=".png,.jpg,.jpeg,.pdf">
+          </div>
+        </div>
+        <div class="linha-campos">
+          <div class="campo campo-largo">
+            <label for="descricao">Descrição do problema <span class="obrigatorio">*</span></label>
+            <textarea id="descricao" name="descricao" rows="5" required minlength="20" maxlength="500" placeholder="Explique o que aconteceu..."></textarea>
+          </div>
+          <fieldset class="opcoes campo">
+            <legend>Equipamentos ou serviços afetados</legend>
+            <div class="opcao"><input type="checkbox" id="eq-computador" name="equipamentos" value="computador"><label for="eq-computador">Computador</label></div>
+            <div class="opcao"><input type="checkbox" id="eq-impressora" name="equipamentos" value="impressora"><label for="eq-impressora">Impressora</label></div>
+            <div class="opcao"><input type="checkbox" id="eq-rede" name="equipamentos" value="rede"><label for="eq-rede">Rede</label></div>
+            <div class="opcao"><input type="checkbox" id="eq-sistema" name="equipamentos" value="sistema"><label for="eq-sistema">Sistema</label></div>
+          </fieldset>
+        </div>
+      </fieldset>
+
+      <div class="rodape-form">
+        <div class="confirmacao">
+          <input type="checkbox" id="confirmacao" name="confirmacao" value="sim" required>
+          <label for="confirmacao">Confirmo que as informações fornecidas são verdadeiras. <span class="obrigatorio">*</span></label>
+        </div>
+        <div class="botoes">
+          <button type="reset" class="botao botao-secundario">Limpar</button>
+          <button type="submit" class="botao">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Central de Serviços de Rede &bull; Aluno: Lucas Dias &bull; Desenvolvimento Web I &bull; IFC - INSTITUTO FEDERAL CATARINENSE</p>
+    </div>
+  </footer>
+</body>
+</html>

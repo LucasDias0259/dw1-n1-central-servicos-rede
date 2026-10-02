@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamados | Central de Serviços de Rede</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/chamados.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <div>
+        <h1>Central de Chamados</h1>
+        <p>Registro e acompanhamento de solicitações técnicas</p>
+      </div>
+      <nav class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="chamados.html" aria-current="page">Chamados</a></li>
+          <li><a href="abrir-chamado.html">Abrir chamado</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="secao" aria-labelledby="titulo-visao">
+      <h2 id="titulo-visao">Visão geral</h2>
+      <div class="indicadores">
+        <div class="indicador indicador-aberto"><h3>Abertos</h3><strong>3</strong></div>
+        <div class="indicador indicador-pendente"><h3>Pendentes</h3><strong>2</strong></div>
+        <div class="indicador indicador-concluido"><h3>Concluídos</h3><strong>1</strong></div>
+      </div>
+    </section>
+
+    <section class="secao pesquisa" aria-labelledby="titulo-pesquisa">
+      <h2 id="titulo-pesquisa">Pesquisar chamados</h2>
+      <form action="chamados.html" method="get">
+        <div class="linha-campos">
+          <div class="campo campo-grande">
+            <label for="palavra-chave">Palavra-chave</label>
+            <input type="search" id="palavra-chave" name="palavra-chave" placeholder="Internet, roteador ou Wi-Fi" maxlength="80">
+          </div>
+          <div class="campo">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+              <option value="">Todas</option>
+              <option value="rede">Rede</option>
+              <option value="seguranca">Segurança</option>
+              <option value="hardware">Hardware</option>
+              <option value="sistema">Sistema</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade" name="prioridade">
+              <option value="">Todas</option>
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="status">Status</label>
+            <select id="status" name="status">
+              <option value="">Todos</option>
+              <option value="aberto">Aberto</option>
+              <option value="pendente">Pendente</option>
+              <option value="concluido">Concluído</option>
+            </select>
+          </div>
+        </div>
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="data-inicial">Data inicial</label>
+            <input type="date" id="data-inicial" name="data-inicial">
+          </div>
+          <div class="campo">
+            <label for="data-final">Data final</label>
+            <input type="date" id="data-final" name="data-final">
+          </div>
+          <div class="campo">
+            <label for="horario">Horário</label>
+            <input type="time" id="horario" name="horario">
+          </div>
+          <div class="acoes-pesquisa">
+            <button type="submit" class="botao">Pesquisar</button>
+            <button type="reset" class="limpar">Limpar filtros</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-lista">
+      <div class="cabecalho-lista">
+        <div>
+          <h2 id="titulo-lista">Chamados encontrados</h2>
+          <p>Solicitações cadastradas na Central de Serviços</p>
+        </div>
+        <a class="botao" href="abrir-chamado.html">Abrir novo chamado</a>
+      </div>
+      <div class="lista-chamados">
+        <article class="chamado aberto">
+          <div>
+            <p class="chamado-numero">Chamado #001</p>
+            <h3>Laboratório sem acesso à internet</h3>
+            <p class="chamado-info">Rede &bull; Prioridade alta &bull; Maria da Silva &bull; <time datetime="2026-10-02">02/10/2026</time> às 19h30</p>
+          </div>
+          <span class="status status-aberto">&#9679; Aberto</span>
+        </article>
+        <article class="chamado pendente">
+          <div>
+            <p class="chamado-numero">Chamado #002</p>
+            <h3>Atualização do antivírus</h3>
+            <p class="chamado-info">Segurança &bull; Prioridade média &bull; João Pereira &bull; <time datetime="2026-10-01">01/10/2026</time> às 14h10</p>
+          </div>
+          <span class="status status-pendente">&#9719; Pendente</span>
+        </article>
+        <article class="chamado aberto">
+          <div>
+            <p class="chamado-numero">Chamado #003</p>
+            <h3>Impressora da secretaria não imprime</h3>
+            <p class="chamado-info">Hardware &bull; Prioridade média &bull; Ana Souza &bull; <time datetime="2026-10-01">01/10/2026</time> às 09h45</p>
+          </div>
+          <span class="status status-aberto">&#9679; Aberto</span>
+        </article>
+        <article class="chamado concluido">
+          <div>
+            <p class="chamado-numero">Chamado #004</p>
+            <h3>Troca de senha do Wi-Fi institucional</h3>
+            <p class="chamado-info">Rede &bull; Prioridade baixa &bull; Carlos Lima &bull; <time datetime="2026-09-30">30/09/2026</time> às 16h20</p>
+          </div>
+          <span class="status status-concluido">&#10003; Concluído</span>
+        </article>
+        <article class="chamado aberto">
+          <div>
+            <p class="chamado-numero">Chamado #005</p>
+            <h3>Sistema acadêmico fora do ar</h3>
+            <p class="chamado-info">Sistema &bull; Prioridade alta &bull; Fernanda Alves &bull; <time datetime="2026-09-29">29/09/2026</time> às 08h05</p>
+          </div>
+          <span class="status status-aberto">&#9679; Aberto</span>
+        </article>
+        <article class="chamado pendente">
+          <div>
+            <p class="chamado-numero">Chamado #006</p>
+            <h3>Instalação de ponto de rede na sala 12</h3>
+            <p class="chamado-info">Rede &bull; Prioridade baixa &bull; Pedro Rocha &bull; <time datetime="2026-09-28">28/09/2026</time> às 11h00</p>
+          </div>
+          <span class="status status-pendente">&#9719; Pendente</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+     <p>Central de Serviços de Rede &bull; Aluno: Lucas Dias &bull; Desenvolvimento Web I &bull; IFC - INSTITUTO FEDERAL CATARINENSE</p>
+    </div>
+  </footer>
+</body>
+</html>
