@@ -502,7 +502,7 @@ Abra o arquivo `index.html` no navegador, ou acesse o link do GitHub Pages. Não
 - [x] Ausência de rolagem horizontal.
 ## Entrega
  
-- [ ] Nome do estudante no README;
+- [x] Nome do estudante no README;
 - [x] Commits realizados;
 - [x] Código enviado ao GitHub;
 - [x] Repositório público;
