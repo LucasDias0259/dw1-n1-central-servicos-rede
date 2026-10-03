@@ -10,6 +10,7 @@
   --raio: 0.75rem;
   --darkgreen: #006400;
   --green: #008000;
+   --greenyellow:#adff2f;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
   text-transform: uppercase;
 }
 .cabecalho p {
-  color: #dbe7fb;
+  color:  #abff2e;
 }
 
 /* Menu */
@@ -56,8 +57,8 @@ body {
 .menu a {
   display: block;
   padding: 0.75rem 1.5rem;
-  background: var(--branco);
-  color: var(--azul);
+  background: var(--darkgreen);
+  color: var(--branco);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -66,7 +67,8 @@ body {
 }
 .menu a:hover,
 .menu a:focus-visible {
-  outline: 3px solid var(--azul-claro);
+  outline: 3px solid var(--azul);
+  color: #abff2e;
 }
 .menu a[aria-current="page"] {
   background: var(--azul-claro);
@@ -92,7 +94,7 @@ main h2 {
   padding: 0.8rem 1.6rem;
   border: 0;
   border-radius: 0.5rem;
-  background: var(--azul);
+  background: var(--darkgreen);
   color: var(--branco);
   font-weight: 700;
   text-transform: uppercase;
@@ -101,8 +103,9 @@ main h2 {
 }
 .botao:hover,
 .botao:focus-visible {
-  background: var(--azul-escuro);
-  outline: 3px solid var(--azul-claro);
+  background: var(--azul-claro);
+  outline: 3px solid var(--darkgreen);
+  color: #abff2e;
 }
 .botao-secundario {
   background: #e1e7f0;
@@ -111,7 +114,7 @@ main h2 {
 .botao-secundario:hover,
 .botao-secundario:focus-visible {
   background: #cdd6e3;
-  color: #3a475a;
+  color: darkgreen;
 }
 
 /* Formulários (base) */
