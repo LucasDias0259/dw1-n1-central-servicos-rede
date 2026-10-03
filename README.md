@@ -3,10 +3,10 @@
 Projeto avaliativo da disciplina **Desenvolvimento Web I** (N1).
 Site de uma central de chamados técnicos, com três páginas, feito apenas com HTML e CSS.
 
-- **Autor:** SEU NOME
-- **Instituição:** NOME DA INSTITUIÇÃO
+- **Autor:** Lucas Dias
+- **Instituição:** IFC - INSTITUTO FEDERAL CATARINENSE
 - **Repositório:** `dw1-n1-central-servicos-rede`
-- **GitHub Pages:** https://SEU-USUARIO.github.io/dw1-n1-central-servicos-rede/
+- **GitHub Pages:** https://LucasDias0259.github.io/dw1-n1-central-servicos-rede/
 
 ## Páginas
 
@@ -42,23 +42,5 @@ dw1-n1-central-servicos-rede/
 - Menu igual nas três páginas, com a página atual destacada via `aria-current="page"`
 - Status dos chamados identificados por **cor e texto**
 
-## Como executar
 
-Basta abrir o `index.html` no navegador. Não há JavaScript, banco de dados nem servidor.
 
-## Publicação (Git e GitHub Pages)
-
-```bash
-git init
-git add .
-git commit -m "Primeira versão da Central de Serviços de Rede"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/dw1-n1-central-servicos-rede.git
-git push -u origin main
-```
-
-Depois: **Settings → Pages → Deploy from a branch → `main` / `(root)` → Save**.
-
-## Dificuldades encontradas
-
-Descreva aqui, com suas palavras, as dificuldades que teve (ou "nenhuma").
