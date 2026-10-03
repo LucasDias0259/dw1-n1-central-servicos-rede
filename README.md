@@ -1,9 +1,9 @@
 # Avaliação Prática N1 — Central de Serviços de Rede
  
-**Estudante:** SEU NOME  
+**Estudante:** LUCAS DIAS
 **Disciplina:** Desenvolvimento Web I  
 **Curso:** Tecnologia em Redes de Computadores  
-**Instituição:** NOME DA INSTITUIÇÃO  
+**Instituição:** IFC - INSTITUTO FEDERAL CATARINENSE  
 **Data:** 2 de outubro de 2026  
 **Modalidade:** Individual  
 **Repositório:** https://github.com/LucasDias0259/dw1-n1-central-servicos-rede  
@@ -108,7 +108,7 @@ A página atual é destacada no menu com `aria-current="page"` e uma cor diferen
  
 ---
  
-![Página principal](./docs/01-index.png)
+
  
 # 1. Página principal — `index.html`
  
@@ -142,7 +142,7 @@ Cada cartão apresenta imagem (com texto alternativo), categoria, nome do servi�
  
 ---
  
-![Pesquisa e listagem de chamados](./docs/02-chamados.png)
+
  
 # 2. Pesquisa e listagem — `chamados.html`
  
@@ -206,7 +206,7 @@ A situação do chamado nunca é comunicada apenas pela cor: há também o texto
  
 ---
  
-![Abertura de chamado](./docs/03-abrir-chamado.png)
+
  
 # 3. Abertura de chamado — `abrir-chamado.html`
  
