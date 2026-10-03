@@ -419,13 +419,6 @@ git push -u origin main
  
 Abra o arquivo `index.html` no navegador, ou acesse o link do GitHub Pages. Não é necessário instalar nada.
  
----
- 
-# Uso de Inteligência Artificial
- 
-Utilizei uma ferramenta de IA como apoio na geração da estrutura inicial do projeto. Depois revisei o código, testei as três páginas em telas amplas e estreitas e adaptei cores, fonte e imagens. Consigo explicar o funcionamento do HTML e do CSS entregues.
- 
----
  
 # Dificuldades encontradas
  
